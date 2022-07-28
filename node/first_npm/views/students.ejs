@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>you have requested student name :<%= name %></h1> <!-- <%= name %> is the ejs -->
+        <p>id : <%= id %></p>
+        <h2>Subjects</h2>
+        <ul>
+            <% subjects.forEach(function(item){ %>
+<li> <%= item %></li>
+           <% }); %>
+        </ul>
+    </body>
+</html>
